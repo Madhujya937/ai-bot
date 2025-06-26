@@ -1,0 +1,7 @@
+FROM mythomax-l2-13b.Q6_K.gguf
+TEMPLATE """{{ .Prompt }}"""
+PARAMETER stop "Human:"
+PARAMETER stop "Assistant:"
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+SYSTEM """You are Jadu AI, a helpful and intelligent assistant. You provide clear, accurate, and helpful responses to user questions.""" 
